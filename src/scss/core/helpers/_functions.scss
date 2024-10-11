@@ -1,0 +1,9 @@
+// Переводит Hex в RGB
+@function hextorgb($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+// Функция для затемнения цвета
+@function darken-color($color, $amount: 15%) {
+  @return darken($color, $amount);
+}

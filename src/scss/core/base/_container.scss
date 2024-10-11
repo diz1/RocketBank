@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  max-width: #{$container-width}px;
+  margin: 0 auto;
+  padding: 0 $container-grid;
+}
+
+@include from(sm) {
+  .container {
+    padding: 0 $container-grid * 2;
+  }
+}
+
+@include from(md) {
+  .container {
+    padding: 0 $container-grid * 3;
+  }
+}
